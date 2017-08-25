@@ -61,4 +61,10 @@ class Session
     {
 
     }
+
+    public __toString()
+    {
+      self::start();
+      return http_build_query($_SESSION);
+    }
 }
